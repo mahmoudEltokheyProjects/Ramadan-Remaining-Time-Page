@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- +++++++++++++ Responsive meta +++++++++++++ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- +++++++++++++ Google / Search Engine Tags +++++++++++++ -->
+        <meta itemprop="name" content="Ramadan Countdown">
+        <meta itemprop="description" content="هذا الموقع يقوم بحساب الأيام المتبقية على بداية/نهاية شهر رمضان">
+        <meta itemprop="image" content="imgs/thumbnail.jpg">
+        <!-- +++++++++++++ Facebook Meta Tags +++++++++++++ -->
+        <meta property="og:url" content="https://ramadan-countdown.netlify.app">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Ramadan Countdown">
+        <meta property="og:description" content="هذا الموقع يقوم بحساب الأيام المتبقية على بداية/نهاية شهر رمضان">
+        <meta property="og:image" content="imgs/thumbnail-wide.jpg">
+        <!-- +++++++++++++ Twitter Meta Tags +++++++++++++ -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Ramadan Countdown">
+        <meta name="twitter:description" content="هذا الموقع يقوم بحساب الأيام المتبقية على بداية/نهاية شهر رمضان">
+        <meta name="twitter:image" content="imgs/thumbnail.jpg">
+        <!-- +++++++++++++ We<meta name="favicon" content="bsite Favicon +++++++++++++ -->
+        <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+        <!-- +++++++++++++ Website Title +++++++++++++ -->
+        <title>Ramadan Countdown</title>
+        <!-- +++++++++++++ style file +++++++++++++ -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- +++++++++++++++++ moon image +++++++++++++++++ -->
+            <div class="container-content">
+                <!-- ============ Ramadan Moon ============ -->
+                <img src="../imgs/moon.svg" class="container-moon" alt="image">
+                <!-- ============ Ramadan Shapes ========== -->
+                <div class="container-shapes">
+                    <!-- /////// 1 فانوس رمضان /////// -->
+                    <div class="container__shape">
+                        <img class="container__shapeImg" src="imgs/islamic-shapes.svg" alt="islamic-shape">
+                    </div>
+                    <!-- /////// 2 فانوس رمضان /////// -->
+                    <div class="container__shape">
+                        <img class="container__shapeImg" src="imgs/islamic-shapes.svg" alt="islamic-shape">
+                    </div>
+                    <!-- /////// 3 فانوس رمضان /////// -->
+                    <div class="container__shape">
+                        <img class="container__shapeImg" src="imgs/islamic-shapes.svg" alt="islamic-shape">
+                    </div>
+                    <!-- /////// نجوم رمضان /////// -->
+                    <div class="container_stars">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                        <img class="container__star" src="imgs/star.svg" alt="islamic-shape">
+                    </div>
+                </div>
+                <!-- +++++++++++++++++ text container +++++++++++++++++ -->
+                <p class="container_text">
+                    <span>باقي</span>
+                    <span class="container_text_fromOrTo"></span>
+                    <span class="container_specialWord">رمضان</span>
+                </p>
+                <!-- +++++++++++++++++ Time Remaining +++++++++++++++++ -->
+                <p class="container_remaining">
+                    <span class="container_remainingTime">--</span>
+                    <span>يوم</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- moment js library ( for timeZone )-->
+        <script src="js/moment.js"></script>
+        <!-- moment-hijri js library ( for timeZone )-->
+        <script src="js/moment-hijri.js"></script>
+        <!-- script file -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
